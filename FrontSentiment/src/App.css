@@ -1,0 +1,167 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.App {
+  text-align: center;
+  background-color: antiquewhite;
+  height: 100vh;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #a29494;
+  height: 150px;
+  padding: 20px;
+  color: white;
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.Main {
+  display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 30%;
+    align-items: center;
+}
+
+.posAnswer {
+  font-size: 72px;
+  color: #1ecd97;
+  margin-top: 25px;
+}
+
+.negAnswer {
+  font-size: 72px;
+  color: red;
+  margin-top: 25px;
+}
+
+.area {
+  border-radius: 13px;
+  height: 200px;
+  margin-bottom: 11px;
+  border-color: #1ecd97;
+  border-width: 2px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -65px;
+  margin-top: -20px;
+  width: 130px;
+  height: 40px;
+  text-align: center;
+}
+
+.butt {
+  outline: none;
+  height: 40px;
+  text-align: center;
+  width: 130px;
+  border-radius: 40px;
+  background: #fff;
+  border: 2px solid #1ecd97;
+  color: #1ecd97;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.butt:hover {
+  color: white;
+  background: #1ecd97;
+}
+
+.butt:active {
+  letter-spacing: 2px;
+}
+
+.butt:after {
+  content: "SUBMIT";
+}
+
+.onclic {
+  width: 40px;
+  border-color: #bbb;
+  border-width: 3px;
+  font-size: 0;
+  border-left-color: #1ecd97;
+  animation: rotating 2s 0.25s linear infinite;
+}
+
+.onclic:after {
+  content: "";
+}
+
+.onclic:hover {
+  color: #1ecd97;
+  background: white;
+}
+
+.validate {
+  font-size: 13px;
+  color: white;
+  background: #1ecd97;
+}
+
+.validate:after {
+  font-family: 'FontAwesome';
+  content: "\f00c";
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background-color: #a29494;
+  color: white
+}
+
+
+body:before {
+  content: "";
+  height: 100%;
+  float: left;
+  width: 0;
+  margin-top: -32767px;
+  /* thank you Erik J - negate effect of float*/
+}
